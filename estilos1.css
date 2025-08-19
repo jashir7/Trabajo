@@ -1,0 +1,83 @@
+/* ====== Configuración general ====== */
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
+    margin: 0;
+    padding: 0;
+    color: #f4f4f4;
+}
+
+/* Contenedor principal */
+.contenedor {
+    max-width: 900px;
+    margin: 40px auto;
+    background: rgba(0, 0, 0, 0.75);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 8px 20px rgba(0,0,0,0.5);
+}
+
+/* ====== Encabezados ====== */
+h1 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #fdbb2d;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+}
+
+h2 {
+    border-left: 6px solid #fdbb2d;
+    padding-left: 10px;
+    margin-top: 30px;
+    color: #ffdd57;
+}
+
+/* ====== Listas ====== */
+ul, ol {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0;
+}
+
+li {
+    margin: 12px 0;
+}
+
+/* ====== Enlaces ====== */
+a {
+    display: block;
+    text-decoration: none;
+    font-size: 1.1em;
+    color: #ffffff;
+    background: linear-gradient(90deg, #005f73, #0a9396);
+    padding: 12px 18px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.3);
+}
+
+a:hover {
+    background: linear-gradient(90deg, #94d2bd, #0a9396);
+    transform: translateY(-3px);
+    box-shadow: 0px 6px 15px rgba(0,0,0,0.5);
+    color: #000;
+}
+
+/* ====== Animación suave ====== */
+a {
+    position: relative;
+    overflow: hidden;
+}
+a::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,0.2);
+    transition: all 0.4s;
+}
+a:hover::after {
+    left: 0;
+}
